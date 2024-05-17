@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <title>Ajouter un patient</title>
+    <script src="controle.js"></script>
+  </head>
+  <body>
+    <form method="POST" action="ajout.php" onsubmit="return verif1()">
+      <fieldset>
+        <h2>Ajout d'un patient</h2>
+        <pre>
+
+            <label for="matr">Matricule:</label> <input class="input" type="text" name="matr" id="matr">
+
+            <label for="nm">Nom      :</label> <input class="input" type="text" name="nm" id="nm">
+
+            <label for="prn">Prénom   :</label> <input class="input" type="text" name="prn" id="prn">
+
+                           
+            <input type="submit" value="Valider" class="button">   <input type="reset" value="Annuler" class="button">
+        </pre>
+      </fieldset>
+    </form>
+  </body>
+</html>

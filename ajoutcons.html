@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <title>consultation</title>
+    <script src="controle.js"></script>
+  </head>
+  <body>
+    <form method="POST" action="consultation.php" onsubmit="return verif2()">
+      <fieldset>
+        <h2>Ajout d'une consultation</h2>
+
+        <pre>
+                <label for="matr">Matricule:      </label><input class="input"  type="text" id="matr" name="matr">
+
+                <label for="det">Detail:        </label> 
+<textarea name="det" id="det" cols="30" rows="10"></textarea>
+
+                <label for="nbr">Prochain R.D.V après:</label> <input class="input" type="text" name="nbr" id="nbr">   <span>jours</span>
+
+                                                              <input type="reset" value="Annuler" class="button"> <input type="submit" value="Confirmer" class="button">
+            </pre>
+      </fieldset>
+    </form>
+  </body>
+</html>
